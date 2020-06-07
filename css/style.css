@@ -1,0 +1,66 @@
+* {
+     font: 700  'Open Sans', serif; 
+     color: #000000; 
+}
+
+.profilepicture{
+    border-radius: 50%;
+    border-style: double;
+    border-width: 1rem;
+    border-color: rgb(39, 10, 119);
+
+}
+.container__item1{
+    background-image: url(/images/possibleheaderbg.png);
+    /* background-color: red; */
+    
+
+}
+h1{
+    font-size: 7rem;
+    color: rgb(143, 48, 238);
+    text-align: center;
+}
+.nav{
+background-color:aqua;
+}
+.nav__item1,
+.nav__item2,
+.nav__item3,
+.nav__item4,
+.nav__item5
+{
+    text-align: center; 
+    background-color: #0f0;
+    color: #011;
+}
+
+.about{
+    background-color: salmon;
+}
+
+.skills{
+    background-color: slateblue;
+}
+.highlights{
+
+    background: rgba(157, 117, 252, 0.6); 
+}
+.highlights__item1{
+grid-row-start: 2 ;
+}
+.projects{
+    background-color: palegreen;
+}
+.portfoliotype{
+    background-color: darkmagenta;
+}
+.code{
+    background-color: thistle;
+}
+.design{
+ background-color: yellow;
+}
+.typeselector{
+    background-color: powderblue;
+}
