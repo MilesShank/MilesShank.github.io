@@ -1,12 +1,12 @@
 <!DOCTYPE <html>
 <html lang ="en">
- 
+    
     <head>
 
         <link rel="stylesheet" href="./css/layout.css">
         <link rel="stylesheet" href="./css/style.css">
 
-        <title>welcum 2 my webiste!</title>
+        <title>Miles Shank</title>
     </head>
  <body>
    
@@ -14,46 +14,60 @@
         <header class = "container__item1">
             
             <img class = "profilepicture" src = "images/milesshank.jpg">
-                <h1>Miles Shank</h1>
-                <!-- <h6>i hope it will look better soon</h6> -->
-        </header>
-
-    <div class = "container__item2">
+                <h1> Miles Shank</h1>
+                
+            <element class = "socialmedianav">
+            <!-- <h6 class = "subhead">developer, designer</h6> -->
+           <a href = "http://www.linkedin.org"><img class = "linkedin" src = "images/svgs/Asset 6.svg"></a> 
+           <a href = "https://github.com/MilesShank"><img class = "git" src = "images/svgs/Asset 5.svg"></a> 
+            </element>
+        
         <nav class = "nav">
-            <p class = "nav__item1">About</p>
-            <p class = "nav__item2">Skills</p>
-            <p class = "nav__item3">Portfolio Highlights</p>
-            <p class = "nav__item4">Code</p>
-            <p class = "nav__item5">Design</p>
+            <a href = "#about" class = "nav__item1">About</a>
+            <a href = "#about" class = "nav__item2">Skills</a>
+            <a href = "#highlights" class = "nav__item3">Highlights</a>
+            <a href = "#portfolios" class = "nav__item4">Code</a>
+            <a href = "#portfolios" class = "nav__item5">Design</a>
         
         </nav>
-    </div>
+    </header>
 
+  
     <div class = "container__item3">
         <section class = "highlights">    
-                
+            <a id = "highlights">  
             <element class = "highlights__item1">
 
-            <h2>Portfolio Highlights</h2>
+            <h2>Highlights</h2>
             
-        
-            </element>
+            </element> 
+        </a>
             <element class = "highlights__item2">
                 <div class = "projects">
+                   
                     <article class = "projects__item1">
-                        <h3>crossiq+</h3>
+                        <a href = "https://www.crossniq.com/"><h3>crossniq+</h3>
+                        <img class = "crossniq" src = "images/art/crossniqgif.gif"></a>
                     </article>
                     <article class = "projects__item2">
-                        <h3>anything grow</h3>
+                        <a href = "https://accad.osu.edu/accad-proudly-presents-spring-2020-open-beta">
+                        
+                        <h3>anything grows</h3>
+                        <img class = "anythinggrows" src = "images/art/spacefarmgif.gif">    
+                    </a>
                     </article>
                     <article class = "projects__item3"> 
-                        <h3>virtual pet amok</h3>
-                    </article>
+                      <a href = "https://github.com/MilesShank/MilesShank.github.io" > 
+                        <h3>Portfolio Website</h3>
+                        <img class = "portfoliosite" src = "images/art/portfoliosite.PNG">
+                    </a>
+                </article>
                 </div>
             </element>
         </section>
     </div>
-
+   
+    <a id = "portfolios">
     <div class = "container__item4">
         <section class = "portfoliotype">
             <element class = "portfoliotype__item1">
@@ -93,13 +107,15 @@
             </element>
         </section>
     </div>
-    <div class = "container__item5">
+    </a>
+    <a id = "about">
+    <div class = "container__item5" >
             <section class = "aboutskills">
             <element class ="aboutme__item1">
                 <div class="about">
                 
                     <h2 class = "about__item1">About</h2>
-                    <p class = "about__item2">im  bitch</p>
+                    <p class = "about__item2">Developer and visual designer, from the back to front end.</p>
                 
             </div>
             </element>
@@ -107,14 +123,14 @@
                 <div class ="skills">
                 
                     <h2 class = "skills__item1">Skills</h2>
-                    <p class = "skills__item2">being bitch</p>
+                    <p class = "skills__item2">CSS HTML JAVA VIDEO GAMES </p>
                 
             
                 </div>
             </element>
         </section>
     </div>
-               
+     </a>          
     </container>
     </body>
 </html>

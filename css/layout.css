@@ -2,76 +2,182 @@
     box-sizing: border-box;
     /* margin: 1em auto;  */
     padding: 0;
-    max-width: 100%;
-     min-height: 100%; 
+    /* max-width: 100%; */
+     /* min-height: 100%;  */
 
      
 }
-/* @media (orientation: landscape) { */
-/* .nav{
+ @media (orientation: landscape) {
+    .container{
+    
         display: grid;
-     place-items: stretch; 
+        /* align-items: center; */
+        width:80%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr 1fr 1fr;
+    }
+    .container__item1{
+        grid-column: 1;
+        grid-row-start: 1 ;
+        max-width: 60%;  
+        float: top;  
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        grid-template-rows: 1fr ; 
+        
+    }
+    .profilepicture{
+        width: 80%;
+         grid-column: 2; 
+         grid-row: 1 ; 
+        
+    }
+    
+    h1{
+        
+        grid-column-start: 1;
+        grid-row-start: 1;
 
-     grid-row-end:-1; 
+      
+    }
+    
+    .socialmedianav{
+    
+        grid-column-start: 1;
+        grid-row-start: 1;
+        align-self: baseline;
+    }
+    .nav{
+        display: grid;
+        grid-column-start: 1;
+        grid-row-start: 1;
+    
+        grid-template-columns: repeat(6, 1fr);
+    }
+    
+    .highlights{
+         grid-column-start: 1;
+        grid-row: 2;
+        
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        grid-template-rows: 1fr;
+    }
+    .highlights__item1{
+    
+        grid-row-start: 1 ;
+        text-indent: 3rem;
+        
+        
+        
+    }
+    .highlights__item2{
+        align-self: stretch;
+        justify-self: center;
+        grid-column-start: 2;
+        /* grid-row: 1 / span 3; */
+    }
+    
+    .portfoliotype{
+        display: grid;
+        grid-template-columns:repeat(3 1fr);
+        grid-template-rows: 2fr repeat(3 1fr);
+    }
+    .portfoliotype__item1{
+        grid-column-start: 1;
+    }
+    .portfoliotype__item2{
+        grid-column-start: 2;
+    }
+    .portfoliotype__item3{
+        grid-column-start: 3;
+    }
+    .aboutskills{
+        display: grid;
+        grid-template-columns:1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+ }
 
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 1f;
-    column-span: 90%;
-}
-.about{
+
+
+
+
+
+
+
+
+
+ @media (orientation: portrait){ 
+    .container{
     display: grid;
-    grid-template-columns:1fr 3fr;
-    grid-template-rows:3fr 2fr 1fr;
+    align-items: stretch; 
+    width:100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr 2fr 2fr;
+    /* grid-gap: 1rem; */
 }
-} */
-
-/* @media (orientation: portrait){ */
 .container__item1{
-    padding: 2em;
-     float: top; 
+  
+    max-width: 100%; 
+    float: top; 
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 5fr 1fr 1fr;
     
 }
 .profilepicture{
-   float: left;
-   width: 30%;
+    grid-column-start: 1;
+    grid-row: 1/span 2;
+   width: 100%;
    height: auto; 
- 
 }
+
 h1{
-align-self: right;
+    
+    grid-column-start: 2;
+    grid-row-start: 1;
+    width: 100%;
+    height: auto;
+    text-anchor: middle;
+    
+}
+
+.socialmedianav{
+
+    grid-column-start: 2;
+    grid-row-start: 1;
+    align-self: baseline;
 }
 .nav{
     display: grid;
-     place-items: stretch; 
-     grid-row-end:-1; 
+    grid-column-start: 2;
+    grid-row: 2; 
+    grid-template-columns: repeat(6, 1fr);
+    
+}
 
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 1f;
-    column-span: 90%;
-}
-.container{
-    display: grid;
-    align-items: stretch;
-    width:100%;
-    grid-template-columns: 1fr;
-    grid-template-rows: 3fr 1fr 4fr 4fr 3fr;
-}
 .highlights{
     
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 3fr;
     grid-template-rows: 1fr 1fr 1fr;
 }
 .highlights__item1{
-    /* position:relative; */
-    /* z-index: 5; */
-    grid-row-start: 1 span 3;
-    align-self: center;
+    grid-row: 1/span3 ;
+    align-self: top;
+    justify-self: stretch;
+    text-indent: 3rem;
+    
+    
+    
 }
 .highlights__item2{
-    align-self: stretch;
+
+    align-self: stretch; 
+    justify-self: stretch; 
     grid-column-start: 2;
-    grid-row-start: 1 span 3;
+     grid-row: 1 / span 3; 
 }
 
 .portfoliotype{
@@ -95,4 +201,4 @@ align-self: right;
     grid-template-rows: 1fr 1fr;
 }
 
-/* } */
+ } 
