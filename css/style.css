@@ -79,7 +79,10 @@ body{
     .crossniq,
     .anythinggrows,
     .portfoliosite{
-        width: 15em;
+        
+        width: 50%;
+        border: 15px solid;
+        border-radius: 10px;
     }
     .profilepicture{
         width:13em;
@@ -91,15 +94,40 @@ body{
         font-size: x-large;
     }
     .container{
-        background-color: maroon;
+        padding: 1em;
+        
     }
+    .highlights{
+        font-size: xx-large;
+    }
+
     .container__item2{
-        background-color: lawngreen;
+        font-size: large;
+        background-color: rgb(30, 187, 171);
+        text-align: center;
+        justify-content: center;
+        margin-top: 1em;
+        padding: 1em;
+        border-radius: 30px;
+        border-width: 1em;
+        
     }
-    .aboutskills{
-        background-color: magenta;
+    .about{
+        margin-top: 2em;;
+        background-color: rgb(30, 187, 171);
+        border-radius: 10px;
+        padding: 2em;
+    }
+    .skills{
+        margin-top: 2em;
+        background-color: rgb(30, 187, 171);
+        border-radius: 10px;
+        padding: 2em;
     }
     .container__item4{
-        background-color: lightseagreen;
+        background-color:#FF515F;
+        text-align: center;
+        margin-top: 1em;
+        border-radius: 15px;
     }
 }
