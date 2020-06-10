@@ -11,175 +11,76 @@ body{
 
 
 
-.container__item1{
 
-    background-image: url(/images/svgs/Asset\ 2.svg); 
-    background-repeat: no-repeat;
-    padding-bottom: 1rem;
-    align-self: left;
-    
-}
-
-
-.linkedin{
-    opacity: .80;
-    width: 3rem;
-    height: auto;
-}
-.git{
-    opacity: .80;
-    width:3rem;
-    height: auto;
-}
-h1{
-    text-align: center;
-    font-variant: small-caps;
-    font-size: 4rem;
-    font-stretch: expanded;
-
-}
 
 
 @media(orientation: landscape){
-.nav__item1,
-.nav__item2,
-.nav__item3,
-.nav__item4,
-.nav__item5
-{
-  
-    font-size: small;
-    font-weight: bold;
-    text-align: center;
-    /* color: rgb(255,86,91); */
-    
+
+.linkedin,
+.git{
+    width:3em;
+}
+.crossniq,
+.anythinggrows,
+.portfoliosite{
+    width: 15em;
 }
 .profilepicture{
 
     border-radius: 50%;
     border-style: double;
-    border-width: 2rem;
-    border-color: rgba(255, 255, 255, 0.8);
-    
+    border-width: 2em;
+}
+.container{
+    background-color: maroon;
+}
+.container__item2{
+    background-color: lawngreen;
+}
+.aboutskills{
+    background-color: magenta;
+}
+.container__item4{
+    background-color: lightseagreen;
 }
 }
+
+
+
+
+
+
 
 @media(orientation: portrait){
-    .container__item1{
 
-    background-image: url(/images/svgs/Asset\ 2.svg); 
-    background-repeat: no-repeat;
-    padding-bottom: 1rem;
-    align-self: left;
-    
-}
-
-
-.linkedin{
-    opacity: .80;
-    width: 3rem;
-    height: auto;
-}
-.git{
-    opacity: .80;
-    width:3rem;
-    height: auto;
-}
-h1{
-    text-align: center;
-    font-variant: small-caps;
-    font-size: 4rem;
-    font-stretch: expanded;
-
-}
+    .linkedin,
+    .git{
+        width:3em;
+    }
+    .crossniq,
+    .anythinggrows,
+    .portfoliosite{
+        width: 15em;
+    }
     .profilepicture{
-        
+        width:13em;
         border-radius: 50%;
         border-style: double;
-        border-width: 2rem;
-        border-color: rgba(255, 255, 255, 0.8);
-        
+        border-width: 2em;
     }
-
-.nav__item1,
-.nav__item2,
-.nav__item3,
-.nav__item4,
-.nav__item5
-{
-     max-width: 100%; 
-    line-height: 2rem; 
-    font-weight: bolder;
-    text-align: center;
-    /* color: rgb(255,86,91); */
-    
-}
-}
-
-.about{
-    background-color: salmon;
-}
-
-.skills{
-    background-color: slateblue;
-}
-.highlights{
-    border-radius: 5%;
-    border-style: double;
-    border-width: 1em;
-background-color: turquoise;
-}
-.highlights__item1{
-    font-size: large;
-    
-
-}
-.projects{
-    /* background-color: palegreen; */
-     padding: 1em;
-    font-size: x-large;
+    .nav{
+        font-size: x-large;
     }
-
-.projects__item1{
-    padding-left: 1em;
-    /* background-color: teal; */
-
-
-}
-.crossniq{
-    border-radius: 20%;
-    width: 80%;
-    border-style: inset;
-    border-color: teal;
-}
-.projects__item2{
-    padding-left: 1em;
-}
-.anythinggrows{
-    border-radius: 20%;
-    width: 80%;
-    border-style: inset;
-    border-color: teal;
-}
-.projects__item3{
-    padding-left: 1em;
-}
-.portfoliosite{
-    border-radius: 20%;
-    width: 80%;
-    border-style: inset;
-    border-color: teal;
-    border-width: thick;
-}
-.portfoliotype{
-    background-color: darkmagenta;
-}
-.code{
-    background-color: thistle;
-}
-.design{
- background-color: yellow;
-}
-.typeselector{
-    background-color: powderblue;
+    .container{
+        background-color: maroon;
+    }
+    .container__item2{
+        background-color: lawngreen;
+    }
+    .aboutskills{
+        background-color: magenta;
+    }
+    .container__item4{
+        background-color: lightseagreen;
+    }
 }
