@@ -6,7 +6,7 @@
    
 }
 body{
-    background-color: rgba(253, 219, 219,.5);
+    background-color: rgba(255, 219, 219,.9);
 }
 
 
@@ -24,6 +24,9 @@ body{
 .anythinggrows,
 .portfoliosite{
     width: 15em;
+    padding: 1em;
+    border: 15px solid;
+    border-radius: 10px;
 }
 .profilepicture{
 
@@ -32,16 +35,32 @@ body{
     border-width: 2em;
 }
 .container{
-    background-color: maroon;
+    /* background-color: maroon; */
 }
 .container__item2{
-    background-color: lawngreen;
+    background-color: #FF515F;
+    text-align: center;
+    justify-content: center;
+    margin-top: 1em;
+    padding: 1em;
+    border-radius: 10px;
+
 }
 .aboutskills{
-    background-color: magenta;
+    
+    background-color: rgb(30, 187, 171);
+    padding: 2em;
+    border-radius: 10px;
+    padding-right: 10%;
+}
+
+.about__item1{
+    align-self: center;
 }
 .container__item4{
-    background-color: lightseagreen;
+    background-color:  rgb(30, 187, 171);
+    padding: 1em;
+    border-radius: 10px;
 }
 }
 

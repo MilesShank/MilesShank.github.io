@@ -68,6 +68,7 @@
        grid-row: aboutskills;
         grid-template-columns: [about] 1f [skills] 1f; 
         grid-gap: 2em;
+        
    }
    .about{
        grid-column: about;
