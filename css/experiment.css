@@ -1,0 +1,224 @@
+
+
+/* Layout */
+
+body {
+    background: #97e1e2;
+    background-image: url(/images/bg.jpg);
+    background-size: 20%;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+h1, h2{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:rgba(255,255,255, .90);
+    text-align: center;
+
+}
+@media (orientation: landscape) {
+.container{
+    
+display:grid;
+grid-template-columns: [profile] 1fr [clr] 2fr;
+column-gap: 20px;
+
+}
+.profile{
+
+    background: rgb(14,166,168);
+    background: linear-gradient(318deg, rgba(14,166,168,1) 0%, rgba(31,229,216,1) 100%); 
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding: 10px;
+    /* border-style: solid;
+    border-color: rgba(255,255,255, .90);
+    border-width: .5em; */
+    align-self: stretch;
+    max-width: 1fr;
+  
+}
+.socialmedialinks{
+    
+    position: fixed;
+   padding-left: 5%;
+    left:0
+}
+
+.clr{
+    margin-left: auto;
+    position: absolute;
+   top: 0;
+   right: 0;
+    float: right;
+    /* padding-left: 13em; */
+}
+}
+
+
+/*portrait*/
+@media (orientation: portrait) {
+.container{
+    display:grid;
+    grid-template-rows: [profile] 1fr[ clr] 5fr;
+}
+.profile{
+    background: rgb(14,166,168);
+    background: linear-gradient(318deg, rgba(14,166,168,1) 0%, rgba(31,229,216,1) 100%);
+    padding-bottom: 1em; 
+    float: top;
+    display: grid;
+    position: relative;
+    justify-content: center;
+
+}
+.profilepicture{
+    justify-self: center;
+}
+.clr{
+    justify-self: center;
+}
+}
+
+.profile{
+
+    border-style: solid;
+    border-color: rgba(255,255,255, .90);
+    border-width: .5em;
+box-sizing: border-box;
+}
+
+.profilepicture{
+    align-self: center;
+   border-radius: 50%;
+    justify-self: top;
+    max-width: 12em;
+    padding: 5px;
+    border-style: solid;
+    border-width: .5em;
+    border-color: rgba(255,255,255, .90);
+
+   }
+.git, .linkedin{
+    width: 3em;    
+}   
+/* Hexagonal Grid */
+
+#grid {
+
+   width: 80%; 
+   margin-top: 5em;
+  padding: 20px 2%;
+  -o-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+
+}
+
+#grid li {
+  position: relative;
+  float: left;
+  width: 27.85714285714286%;
+  padding: 0 0 32.16760145166612% 0;
+  list-style-type: none;
+  -o-transform: rotate(-60deg) skewY(30deg);
+  -moz-transform: rotate(-60deg) skewY(30deg);
+  -webkit-transform: rotate(-60deg) skewY(30deg);
+  -ms-transform: rotate(-60deg) skewY(30deg);
+  transform: rotate(-60deg) skewY(30deg);
+  overflow: hidden;
+  visibility: hidden;
+  cursor: pointer;
+}
+
+#grid li * {
+  visibility: visible;
+}
+
+#grid li .hexagon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  -o-transform: skewY(-30deg) rotate(60deg);
+  -moz-transform: skewY(-30deg) rotate(60deg);
+  -webkit-transform: skewY(-30deg) rotate(60deg);
+  -ms-transform: skewY(-30deg) rotate(60deg);
+  transform: skewY(-30deg) rotate(60deg);
+  overflow: hidden;
+  background: none;
+}
+
+#grid li:nth-child(3n+2) {
+  margin: 0 1%;
+}
+
+#grid li:nth-child(3n+4), #grid li:nth-child(6n+5), #grid li:nth-child(6n+6) {
+  margin-top: -6.9285714285%;
+  margin-bottom: -6.9285714285%;
+}
+
+#grid li:nth-child(6n+1), #grid li:nth-child(6n+2), #grid li:nth-child(6n+3) {
+  -o-transform: translateX(50%) rotate(-60deg) skewY(30deg);
+  -moz-transform: translateX(50%) rotate(-60deg) skewY(30deg);
+  -webkit-transform: translateX(50%) rotate(-60deg) skewY(30deg);
+  -ms-transform: translateX(50%) rotate(-60deg) skewY(30deg);
+  transform: translateX(50%) rotate(-60deg) skewY(30deg);
+}
+
+#grid li:nth-child(6n+1) { 
+  margin-left: 0.5%;
+}
+
+#grid li .hexagon img {
+  left:-100%;
+  right:-100%;
+  height:100%;
+  width: auto;
+  margin: 0 auto;
+  -o-transition: all 0.6s linear 0s; 
+  -moz-transition: all 0.6s linear 0s; 
+  -ms-transition: all 0.6s linear 0s; 
+  -webkit-transition: all 0.6s linear 0s; 
+  transition: all 0.6s linear 0s;
+}
+
+#grid li:hover img {
+  height: 150%;
+  -o-transform: translateZ(0) translateX(-25%);
+  -moz-transform: translateZ(0) translateX(-25%);
+  -webkit-transform: translateZ(0) translateX(-25%);
+  -ms-transform: translateZ(0) translateX(-25%);
+  transform: translateZ(0) translateX(-25%);
+}
+
+#grid li .hexagon .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(255,255,255,0);
+}
+
+#grid li:hover .overlay {
+  -o-transition: all 0.6s linear 0s; 
+  -moz-transition: all 0.6s linear 0s; 
+  -ms-transition: all 0.6s linear 0s; 
+  -webkit-transition: all 0.6s linear 0s; 
+  transition: all 0.6s linear 0s;
+  background: rgba(255,255,255,0.6);
+}
