@@ -8,8 +8,18 @@ body {
   overflow-y: auto;
 
   font-size: 16px;
+  text-align: center;
+
 }
 h2 a{
+    color:rgba(255,255,255, .90);
+    text-align: center;
+}
+a{
+    color:rgb(10, 95, 97);
+}
+
+h2{
     color:rgba(255,255,255, .90);
     text-align: center;
 }
@@ -102,9 +112,11 @@ h2 a{
         border-radius: 10px;
     }
     .description{
-        max-width: 50%;
+        display: block;
+        max-width: 90%;
         text-align: center;
-        padding-left: 5px;
+        justify-self: center;
+        padding: 1em;
         background-color: rgb(215, 240, 250);
         border-style: solid;
         border-color: rgba(14,166,168,1);

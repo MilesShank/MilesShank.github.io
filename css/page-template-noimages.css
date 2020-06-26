@@ -13,12 +13,21 @@ h2 a{
     color:rgba(255,255,255, .90);
     text-align: center;
 }
+h2{
+    color:rgba(255,255,255, .90);
+    text-align: center;
+}
+.clr{
+    font-size: larger;
+    text-shadow: 0px 0px 1px rgb(0, 225, 255);
+    color: rgb(14, 126, 128);
+}
 
 @media (orientation: landscape) {
     .container{
         
     display:grid;
-    grid-template-columns: [profile] 1fr [clr] 2fr;
+    grid-template-columns: [profile] 1fr [clr] 3fr;
     column-gap: 20px;
     
     }
@@ -46,8 +55,7 @@ h2 a{
     }
     
     .clr{
-        font-size: larger;
-        color: rgb(14, 126, 128);
+ 
         margin-left: auto;
         position: relative;
        top: 0;
@@ -65,11 +73,12 @@ h2 a{
 }
 .description{
     max-width: 100%;
-    text-align: center;
+    text-align: left;
     padding-left: 5px;
     background-color: rgb(215, 240, 250);
     border-style: solid;
     border-color: rgba(14,166,168,1);
+    
 }
     }
 
@@ -104,22 +113,29 @@ h2 a{
         border-radius: 10px;
     }
     .description{
-        max-width: 50%;
+        justify-self: center;
+        max-width: 95%;
         text-align: center;
         padding-left: 5px;
+        padding-right:5px;
         background-color: rgb(215, 240, 250);
         border-style: solid;
         border-color: rgba(14,166,168,1);
         font-size: larger;
-    }
+        
+        
     }
     
+    }
+    li{
+        list-style-type: none;
+    }
     .profile{
     
         border-style: solid;
         border-color: rgba(255,255,255, .90);
         border-width: .5em;
-    box-sizing: border-box;
+        box-sizing: border-box;
     }
     
     .profilepicture{
