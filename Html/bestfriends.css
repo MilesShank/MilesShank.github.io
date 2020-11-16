@@ -1,0 +1,76 @@
+.wrapper {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+  position: relative;
+}
+body{
+  background-image: url(bg.jpg);
+}
+.bgphoto {
+
+}
+container {
+  max-width: 70vw;
+  border-width: 15px;
+  border-style: double;
+  border-color: rgb(16, 14, 168);
+
+  background: rgb(16, 14, 168);
+  background: linear-gradient(
+      318deg,
+      rgba(17, 14, 168, 0.603) 0%,
+      rgba(255, 169, 234, 0.548) 100%
+    ),
+    url(glittergif.gif);
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+}
+.frame-top {
+  justify-items: center;
+  display: flex;
+  grid-column: 1/-1;
+  max-height: 30vh;
+}
+.frame-bottom {
+  margin:5px
+  justify-items:center;
+  display:flex;
+  grid-column: 1/-1;
+  max-height: 30vh;
+}
+.mainimage {
+  max-width: 50vw;
+  border-style: groove;
+  border-width: 10px;
+  border-color: rgb(247, 196, 55);
+  z-index: 0;
+}
+.leftgif,
+.rightgif {
+  max-width: 100%;
+  height: auto;
+}
+.dragon {
+  max-width: 20%;
+  height: auto;
+}
+.eyes{
+  position:sticky;
+  max-width: 100%;
+  height: auto;
+}
+.gayheart {
+  position: sticky;
+  width: auto;
+  max-height: 100%;
+}
+.starbff{
+  position: sticky;
+  max-width: 100%;
+  height: auto;
+}
+.defbff {
+  width: 10em;
+}

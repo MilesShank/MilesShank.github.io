@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+    margin: 1em auto; 
+    padding: 0;
+    max-width: 100%;
+    /* min-height: 100%; */
+
+     
+}
+
+.nav{
+        display: grid;
+     place-items: stretch; 
+     grid-row-end:-1; 
+
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1f;
+    column-span: 90%;
+}
+.about{
+    display: grid;
+    grid-template-columns:1fr 3fr;
+    grid-template-rows:3fr 2fr 1fr;
+}
